@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gatitos</title>
+    <style>
+        body{
+            background-color: pink;
+            font: normal 75pt monospace;
+            color: black;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <input type="button" value="CAIXA" id="cat" style="height: 100px; width: 400px;" onclick="janela()">
+    <input type="button" value="CAIXA" id="cat1" style="height: 100px; width: 400px;" onclick="janela1()">
+    <input type="button" value="CAIXA" id="cat2" style="height: 100px; width: 400px;" onclick="janela2()">
+    <h1 id="tt"> ACHE O GATO!</h1>
+    <p id="msg"></p>
+<script>
+    var gatin = document.getElementById('cat')
+    var gatin1 = document.getElementById('cat1')
+    var gatin2 = document.getElementById('cat2')
+    var tit = document.getElementById('tt')
+    var ms = document.getElementById('msg')
+function janela1 (){   
+     ms.innerText = 'AE, MIAU CARAI! ฅ•ω•ฅ ❣'
+     ms.style.color = "rgb(240, 70, 169)"
+     tit.innerText = ""
+}
+function janela(){
+     tit.style.color = "black"
+     ms.innerHTML = `<strong>OPA, sou um ursinho<strong> ฅ(˘ω˘ )ฅ`
+    ms.style.color = "gray"
+    tit.innerText = "ERROUUUU!"
+}
+function janela2(){
+    tit.style.color = "gray"
+    ms.innerHTML = `<strong> NADA DE GATO<strong> *✧×⁼³₌₃`
+    ms.style.color = "black"
+    tit.innerText = "ERROOOOOU!"
+}
+</script>
+    
+</body>
+</html>
